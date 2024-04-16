@@ -1,1 +1,156 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, caption, th, td {
+          border: 2px solid skyblue;
+          border-collapse: collapse;
+        }
+    
+        caption, th, td {
+          padding: 8px;
+        }
+    
+        caption {
+          background-color: lightgrey;
+        }
+    
+        th {
+          background-color: blue;
+        }
+    
+        td {
+          background-color: lightblue;
+        }
+      </style>
+</head>
+<body style="background-color:rgb(34, 120, 12);">
+	<h1>Enquête / Avis </h1>
+
+<form action="#">
+    <div> 
+        <fieldset>
+            <legend>Votre identifiant</legend>
+                <p>Pseudo : <input name="A" type="Text" value="Tapez votre pseudonyme"/></p>
+                <p>Age : <input name="B" type="Text" value="Tapez votre age"/></p>
+                <p>Numéro tèl: <input name="B" type="Text" value="Tapez votre numéro"/></p>
+                
+        </fieldset>
+    </div>
+    <section>
+        <article>
+            <h3>Avez-vous des préférences ?</h3>
+            <p>Film d'Action <input name="C" type="radio" value="Mr"/> 
+                Sans importance <input name="C" type="radio" value="Mme"/></p>
+            <p>
+                1 <input name="D" type="checkbox" value="Chien"/>
+                2 <input name="E" type="checkbox" value="Chat"/>
+                3 <input name="F" type="checkbox" value="Poisson"/>
+</p>
+<p>
+        </article>
+</section>
+<section>
+    <article>
+        <table >
+            <table>
+                <caption>Liste de Film Denzl W</caption>
+                <tr>
+                  <th>iD</th>
+                  <th>Film</th>
+                  <th>Durée</th>
+                  <th>Où le regarder</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Equalizer</td>
+                  <td>2 heures ..</td>
+                  <td>Stream</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Flight</td>
+                  <td>2 heures ..</td>
+                  <td>Stream</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Training Day</td>
+                  <td>2 heures et 40 min</td>
+                  <td>Stream</td>
+                </tr>
+              </table>
+          
+    </article>
+</section>
+<br>
+<div>
+<select name="G" multiple>
+	<option>Horreur</option>
+	<option>Action</option>
+	<option>Drame</option>
+	<option>Aventure</option>
+	<option>Anime</option>
+</select>
+</div>
+</p>
+<p>
+
+
+<section>
+    <div class="contactez-nous">
+            <h1>Contactez-nous</h1>
+            <p>Un problème, une question, envie de nous envoyer un message /!\</p>
+            <form action="/page-traitement-donnees" method="post">
+            <div>
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Martin" required>
+            </div>
+            <div>
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+            <label for="sujet">Quel est le sujet de votre message ?</label>
+            <select name="sujet" id="sujet" required>
+            <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+            <option value="probleme-compte">Problème avec mon compte</option>
+            <option value="question-produit">Question à propos d’un produit</option>
+            <option value="suivi-commande">Suivi de ma commande</option>
+            <option value="autre">Autre...</option>
+            </select>
+            </div>
+            <div>
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+            </div>
+            <div>
+            <button type="submit">Envoyer mon message</button>
+            </div>
+            </form>
+    </div>
+    
+</section> 
+
+<br>
+
+<div>
+<textarea rows="3" cols="30	" name="H">
+Laisez nous un commentaire
+</textarea>
+
+</p>
+<p><input type="submit" value="Envoyer" />
+<input type="reset"/>
+</p>
+</div>
+
+</form>
+
+</body>
+</html>
