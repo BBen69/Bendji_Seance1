@@ -1,85 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MON CV</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Ajout de traits pour délimiter chaque partie du tableau */
+        th:first-child, td:first-child {
+            border-left: none;
+        }
+        th:last-child, td:last-child {
+            border-right: none;
+        }
+        tr:last-child th, tr:last-child td {
+            border-bottom: none;
+        }
+        /* Trait plus gras entre la formation et les compétences */
+        tr:nth-child(5) th, tr:nth-child(5) td {
+            border-top: 2px solid #000;
+        }
+        /* Trait plus gras entre les compétences et les informations complémentaires */
+        tr:nth-child(6) th, tr:nth-child(6) td {
+            border-top: 2px solid #000;
+        }
+    </style>
 </head>
 <body>
-    
-    <table style="border-collapse: collapse;">
+    <h1 style="text-align: center;">CV Bendji JUPITER</h1>
+    <table>
         <tr>
+            <th>Bendji</th>
+            <td>JUPITER</td>
+        </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 10px;"><div style="width: 650px;">
-                <h2>Nom et Prénom</h2>
-                <p>Bendji JUPITER</p>
-            </div>    
-            </td>
-         <tr>   
-            <td style="border: 1px solid black; padding: 10px;">
-                <h2>Formation</h2>
-                <p>Licence pro informatique</p>
-            </td>
-         </tr>   
-            <td style="border: 1px solid black; padding: 10px;">
-                <h2>Compétences</h2>
+        </tr>
+        <hr>
+        <tr>
+            <th>Adresse</th>
+            <td>123 Rue du CV</td>
+        </tr>
+        <tr>
+            <th>Permis</th>
+            <td>B</td>
+        </tr>
+        <tr>
+            <th>Formation</th>
+            <td>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
+                    <li>2023 - 2024 : Licence en Informatique</li>
+                    <li>2023 - 2023 : Certification Google Cybersecurity</li>
+                    <li>2021 - 2023 : DUT Informatique</li>
+                    <li>2017 - 2018 : BAC TAI (niveaux 4)</li>
                 </ul>
             </td>
         </tr>
-         <tr>   
-            <td style="border: 1px solid black; padding: 10px;">
-                <h2>Formation</h2>
-                <p></p>
-            </td>
-         </tr>   
-            <td style="border: 1px solid black; padding: 10px;">
-                <h2>Compétences</h2>
+        <tr>
+            <th>Compétences</th>
+            <td>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>Programmation (Java, Python)</li>
+                    <li>Web development (HTML, CSS, JavaScript)</li>
+                    <li>Base de données (MySQL, NoSQL)</li>
+                    <li>Base de données (NoSQL)</li>
+                    <li>Active Directory</li>
+                    <li>Veeam Backup</li>
+                    <li>Windows Server (2022, 2012, 2008)</li>
+                    <li>Création de packages Adobe</li>
+                    <li>Portail Exchange et Office 365</li>
+                    <li>Support Hardware</li>
+                    <li>Gestion du Stock</li>
                 </ul>
             </td>
         </tr>
+        <tr>
+            <th>informations complémentaires</th>
+            <td>
+                <ul>
+                    <li>2023 - 2024 : Licence en Informatique</li>
+                    <li>2021 - 2023 : DUT Informatique</li>
+                </ul>
+            </td>
         </tr>
     </table>
-    
-<br>
-<br>
-
-<div>
-    <table border="1">
-        <tr>
-            <td><div style="width: 50px;"></div> un autre tableau </td>
-            <td><div style="width: 50px;"></div></td>
-            <td><div style="width: 50px;"></div></td>
-            <td colspan="2"></td>
-            
-            
-        </tr>
-        <tr>
-            <td rowspan="3"><div style="width:150;"></div></td>
-            <td><div style="width: 150px; height: 20px;"></div></td>
-            <td rowspan="3"><div style="width: 150px;"></div></td>
-        </tr>
-        <tr>
-            <td><div style="width: 50px; height: 20px;"></div></td>
-            <td><div style="width: 50px; height: 20px;"></div></td>
-            <td><div style="width: 50px; height: 20px;"></div></td>
-        </tr>
-        <tr>
-            <td><div style="width: 50px; height: 20px;"></div></td>
-        
-        </tr>
-    </table>
-</div>
 </body>
 </html>
-
-
-
