@@ -5,46 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  #container {
-    display: flex;
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
     
-  }
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    #sommaire {
+      width: 100%;
+      background-color: #a78a4d;
+      padding: 25px;
+    }
+
+    #sommaire {
+        display: block;
+        width: 20%;
+        height: 20%;
+        border-radius: 30px;
+        margin-top: 1rem;
+    }
+    
+    #contenu {
+      width: 100%;
+      padding: 20px;
+    }
+    h2, p {
+      margin: 0 0 10px 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   
-  #sommaire {
-    width: 20%;
-    background-color: #a78a4d;
-    padding: 20px;
-  }
+    .TYU {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 2rem;
+    }
   
-  #contenu {
-    width: 80%;
-    padding: 20px;
-  }
-  h2, p {
-    margin: 0 0 10px 0;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .TYU
-   {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
-  }
-
-
-
-</style>
+    @media (min-width: 768px) {
+      #sommaire {
+        width: 20%;
+      }
+      #contenu {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body style="background-color: bisque;">
 
