@@ -35,10 +35,18 @@
         tr:nth-child(6) th, tr:nth-child(6) td {
             border-top: 2px solid #000;
         }
+
+        canvas { background: #eee; }
+
     </style>
 </head>
+<header>
+    <div>   
+        <canvas id="myCanvas" width="1500" height="90"></canvas>
+    </div>
+</header>
 <body>
-    <h1 style="text-align: center;">CV Bendji JUPITER</h1>
+    <h1 style="text-align: center; background-color: aquamarine;">CV Bendji JUPITER</h1>
     <table>
         <tr>
             <th>Bendji</th>
@@ -95,4 +103,51 @@
         </tr>
     </table>
 </body>
+<script>
+    var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var ballRadius = 19;
+var x = canvas.width/2;
+var y = canvas.height-35;
+var dx = 2;
+var dy = -2;
+
+function drawBall() {
+  ctx.beginPath();
+  ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+  ctx.fillStyle = "#ff4500";
+
+  // Add shadow for blur effect
+  ctx.shadowColor = "black";
+  ctx.shadowBlur = ballRadius / 2; // Adjust blur amount as needed
+  ctx.shadowOffsetX = ballRadius / 5;
+  ctx.shadowOffsetY = ballRadius / 5;
+
+  ctx.fill();
+  ctx.closePath();
+
+  // Clear shadow styles to prevent affecting other elements
+  ctx.shadowColor = null;
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetX = 0;
+  ctx.shadowOffsetY = 0;
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    
+    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+    }
+    if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+        dy = -dy;
+    }
+    
+    x += dx;
+    y += dy;
+}
+
+setInterval(draw, 1);
+</script>
 </html>
