@@ -3,6 +3,13 @@
 <head>
   <title>Exercice CSS</title>
   <style>
+    *{
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    
     html {
       background-color: black;
     }
@@ -65,6 +72,24 @@
       font-size: 15px;
       border: 2px solid black;
     }
+
+    .light {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      animation: pulsate 2s infinite;
+      background-color: orangered; /* Initial color */
+    }
+
+    @keyframes pulsate {
+      0% { box-shadow: 0 0 0 10px rgb(43, 37, 39); }
+      50% { box-shadow: 0 0 0 20px rgb(135, 55, 116); }
+      100% { box-shadow: 0 0 0 10px #f00; }
+    }
   </style>
 </head>
 
@@ -74,6 +99,7 @@
     <nav>
       <div class="nav-item HautGauche">En haut à gauche</div>
       <div class="nav-item HautDroite">En haut à droite</div>
+      <div class="light"></div>
       <div class="nav-item BasGauche">En bas à gauche</div>
       <div class="nav-item BasDroite">En bas à droite</div>
     </nav>
