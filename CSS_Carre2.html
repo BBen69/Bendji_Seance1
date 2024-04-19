@@ -8,68 +8,59 @@
     }
 
     header {
-      display: flex; 
-      justify-content: space-between; 
+      display: flex;
+      justify-content: space-between;
       width: 400px;
       height: 400px;
       border: 1px solid #ccc;
       padding: 10px;
       background-color: #f5f5f5;
       border-radius: 30px;
+      position: relative;  
     }
 
-    header nav {
-      display: flex; 
-      flex-direction: space-between; 
-      flex-wrap: wrap;
-    }
-
-    .nav-item { 
+    .nav-item {
       color: white;
       background-color: green;
       width: 100px;
       height: 100px;
-      text-align: center; 
-      margin: 5px; 
-      
+      text-align: center;
+      line-height: 100px;
+      position: absolute;
+      padding: 15px;      
     }
 
     .HautGauche {
-      color: white;
+      top: 0;
+      left: 0;
       background-color: green;
-      width: 100px;
-      height: 100px;
-      text-align: center; 
-      margin: 5px; 
+      margin: 1rem;
+      font-size: 14px;
     }
 
     .HautDroite {
-      color: white;
+      top: 0;
+      right: 0;
       background-color: rgb(215, 174, 23);
-      width: 100px;
-      height: 100px;
-      text-align: center; 
-      margin: 5px;
+      margin: 1rem;
+      font-size: 15px;
     }
 
     .BasGauche {
-      color: rgb(255, 255, 255);
+      bottom: 0;
+      left: 0;
       background-color: rgb(169, 21, 21);
-      width: 100px;
-      height: 100px;
-      text-align: center; 
-      margin: 5px;
+      font-size: 15px;
+      margin: 1rem;
     }
 
     .BasDroite {
-      color: white;
+      bottom: 0;
+      right: 0;
       background-color: rgb(31, 48, 196);
-      width: 100px;
-      height: 100px;
-      text-align: center; 
-      margin: 5px;
+      margin: 1rem;
+      font-size: 15px;
     }
-
   </style>
 </head>
 
@@ -77,10 +68,10 @@
 
   <header>
     <nav>
-      <div class="HautGauche">En haut à gauche</div>
-      <div class="HautDroite">En haut à droite</div>
-      <div class="BasGauche">En bas à droite</div>
-      <div class="BasDroite">En bas à gauche</div>
+      <div class="nav-item HautGauche">En haut à gauche</div>
+      <div class="nav-item HautDroite">En haut à droite</div>
+      <div class="nav-item BasGauche">En bas à gauche</div>
+      <div class="nav-item BasDroite">En bas à droite</div>
     </nav>
   </header>
 
